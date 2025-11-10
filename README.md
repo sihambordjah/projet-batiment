@@ -1,6 +1,6 @@
-# 🏗️ PRONRENOV – Travaux & Rénovation
+# 🏗️ PRORENOV – Travaux & Rénovation
 
-Bienvenue sur le site vitrine de **PRONRENOV**, entreprise spécialisée dans la **rénovation intérieure et extérieure**.
+Bienvenue sur le site vitrine de **PRORENOV**, entreprise spécialisée dans la **rénovation intérieure et extérieure**.
 
 ---
 
@@ -17,7 +17,7 @@ Bienvenue sur le site vitrine de **PRONRENOV**, entreprise spécialisée dans la
 
 ## 🌟 Notre savoir-faire
 
-Chez **PRONRENOV**, nous mettons notre expérience et notre savoir-faire au service de vos projets pour garantir des finitions durables, esthétiques et sur mesure.
+Chez **PRORENOV**, nous mettons notre expérience et notre savoir-faire au service de vos projets pour garantir des finitions durables, esthétiques et sur mesure.
 
 ---
 
