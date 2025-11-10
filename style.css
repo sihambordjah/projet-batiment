@@ -47,6 +47,7 @@ header {
 .navbar {
   display: flex;
   position: relative;
+  /*gap: 20px;*/
 }
 .navbar li {
   list-style: none;
@@ -84,6 +85,23 @@ header .navbar li a:hover {
   object-fit: cover;
   margin-left: 5px;
   border-radius: 4px;
+}
+/* Bouton hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #333;
+  border-radius: 2px;
 }
 /*-----section banniere--------*/
 .banniere {
@@ -175,7 +193,7 @@ header .navbar li a:hover {
 }
 .right {
   margin-left: 100px;
-  width: 30%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -193,6 +211,23 @@ header .navbar li a:hover {
   width: 100%;
   font-size: 14px;
 }
+/*-----btn-phone-----
+
+.btn-phone {
+  display: inline-block;
+  background-color: #317746; 
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+.btn-phone:hover {
+  background-color: #60866b;
+}*/
+
 /*-----Nos prestations-----*/
 .prestations {
   display: flex;
@@ -664,8 +699,12 @@ footer {
   .home-section {
     flex-direction: column-reverse;
   }
+  .home-section .left {
+    width: 400px;
+  }
   .right {
     margin-left: 0px;
+    margin-bottom: 50px;
     width: 100%;
   }
 
@@ -684,6 +723,17 @@ footer {
 }
 /*-----responsive moblile---*/
 @media screen and (max-width: 768px) {
+  /* home */
+  .home-section .left-image-1 {
+    width: 350px;
+    height: 400px;
+  }
+  .home-section .left-image-2 {
+    width: 250px;
+    height: 250px;
+    top: 150px;
+    left: 250px;
+  }
   .footer-content {
     text-align: center;
     width: 100%; /* 1 seule colonne */
