@@ -154,6 +154,9 @@ header .navbar li a:hover {
 .btn:hover {
   letter-spacing: 4px;
 }
+.banner_elect {
+  background-image: url(./images/prestations/pageelectricite-banner.jpg);
+}
 /*----section home (a propos)----*/
 .home-section {
   display: flex;
