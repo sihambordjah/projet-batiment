@@ -86,7 +86,7 @@ header .navbar li a:hover {
   margin-left: 5px;
   border-radius: 4px;
 }
-/* Bouton hamburger */
+/* Bouton hamburger 
 .hamburger {
   display: none;
   flex-direction: column;
@@ -102,7 +102,7 @@ header .navbar li a:hover {
   width: 100%;
   background: #333;
   border-radius: 2px;
-}
+}*/
 /*-----section banniere--------*/
 .banniere {
   position: relative;
@@ -213,6 +213,11 @@ header .navbar li a:hover {
   margin-bottom: 25px;
   width: 100%;
   font-size: 14px;
+}
+.right .text-right {
+  color: #317746;
+  font-size: 2em;
+  font-weight: bold;
 }
 /*-----btn-phone-----
 
