@@ -629,9 +629,11 @@ textarea.input {
   list-style-type: none;
   padding-left: 0;
 }
-.service-text ul li {
+.service-text ul li,
+p {
   margin-bottom: 12px;
   line-height: 1.6;
+  font-size: 1em;
 }
 
 .service-text strong {
