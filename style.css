@@ -624,6 +624,7 @@ textarea.input {
 }
 .service-text {
   flex: 1 1 500px;
+  margin-top: 50px;
 }
 .service-text ul {
   list-style-type: none;
@@ -672,7 +673,92 @@ p {
     max-width: 100%;
   }
 }
+/*-----section pourquoi nous choisir------- */
+.pourquoi-nous {
+  background-color: #fff;
+  padding: 80px 10%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #0f172a;
+}
+.pourquoi-nous .container {
+  display: flex;
+  flex-direction: column;
+}
+.pourquoi-nous h2 {
+  font-size: 2.5rem;
+  color: #317746;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
 
+.pourquoi-nous h2 span {
+  color: #3b82f6; /* bleu plus clair pour contraste */
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #64748b;
+  margin-bottom: 80px;
+  font-style: italic;
+}
+
+.reasons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  margin-bottom: 50px;
+}
+.reason {
+  background: #f8fafc;
+  border-radius: 15px;
+  padding: 30px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.reason:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.reason img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+.reason h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.reason p {
+  font-size: 0.95rem;
+  color: #334155;
+  line-height: 1.6;
+}
+.container btn {
+  padding: 50px;
+}
+/*
+.btn-devis {
+  display: inline-block;
+  background-color: #1e3a8a;
+  color: white;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn-devis:hover {
+  background-color: #162c66;
+}*/
+
+/* Responsive */
+@media (max-width: 768px) {
+  .why-us {
+    padding: 60px 5%;
+  }
+}
 /*----Footer----------*/
 
 footer {
@@ -772,6 +858,7 @@ footer {
   padding: 10px;
   font-weight: 500;
 }
+
 .visually-hidden {
   visibility: hidden;
 }
