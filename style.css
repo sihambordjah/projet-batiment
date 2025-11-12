@@ -597,6 +597,80 @@ textarea.input {
   right: 50px;
   opacity: 0.3;
 }
+
+/*-------page prestation electricité-----------*/
+/*------section electricité---------- */
+.service-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 80px 10%;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+.service-section h2 {
+  color: #317746; /* violet foncé moderne */
+  font-size: 2rem;
+  margin-bottom: 40px;
+  justify-content: center;
+  text-align: center;
+}
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+.service-text {
+  flex: 1 1 500px;
+}
+.service-text ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.service-text ul li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.service-text strong {
+  color: #317746;
+}
+
+.service-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.service-image img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-image h3 {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  color: #4c1d95;
+  font-weight: 700;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 900px) {
+  .service-container {
+    flex-direction: column;
+    text-align: left;
+  }
+  .service-image {
+    text-align: center;
+  }
+  .service-image img {
+    max-width: 100%;
+  }
+}
+
 /*----Footer----------*/
 
 footer {
