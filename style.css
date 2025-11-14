@@ -154,9 +154,7 @@ header .navbar li a:hover {
 .btn:hover {
   letter-spacing: 4px;
 }
-.banner_elect {
-  background-image: url(./images/prestations/pageelectricite-banner.jpg);
-}
+
 /*----section home (a propos)----*/
 .home-section {
   display: flex;
@@ -219,22 +217,6 @@ header .navbar li a:hover {
   font-size: 2em;
   font-weight: bold;
 }
-/*-----btn-phone-----
-
-.btn-phone {
-  display: inline-block;
-  background-color: #317746; 
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-  transition: background 0.3s ease;
-}
-.btn-phone:hover {
-  background-color: #60866b;
-}*/
 
 /*-----Nos prestations-----*/
 .prestations {
@@ -599,7 +581,9 @@ textarea.input {
 }
 
 /*-------page prestation electricité-----------*/
-/*------section electricité---------- */
+.banner_elect {
+  background-image: url(./images/prestations/pageelectricite-banner.jpg);
+}
 .service-section {
   display: flex;
   flex-direction: column;
@@ -609,7 +593,7 @@ textarea.input {
   color: #333;
 }
 .service-section h2 {
-  color: #317746; /* violet foncé moderne */
+  color: #317746;
   font-size: 2rem;
   margin-bottom: 40px;
   justify-content: center;
@@ -659,6 +643,22 @@ p {
   color: #4c1d95;
   font-weight: 700;
 }
+/*-------page prestation peinture-----------*/
+.banner_peinture {
+  background-image: url(./images/prestations/pagepeinture-banner.jpg);
+}
+/*-------page prestation carrelage-----------*/
+.banner_carrelage {
+  background-image: url(./images/prestations/pagecarrelage-banner.jpg);
+}
+/*-------page prestation plombrie-----------*/
+/*-------page prestation meubles cuisines-----------*/
+/*-------page prestation menuiserie-----------*/
+/*-------page prestation fenetres-----------*/
+/*-------page prestation debarras-gravats-----------*/
+/*-------page prestation cave sous sol-----------*/
+/*-------page prestation platererie-----------*/
+/*-------page prestation revetements de sol-----------*/
 
 /* Responsive (mobile) */
 @media (max-width: 900px) {
@@ -737,21 +737,6 @@ p {
 .container btn {
   padding: 50px;
 }
-/*
-.btn-devis {
-  display: inline-block;
-  background-color: #1e3a8a;
-  color: white;
-  text-decoration: none;
-  padding: 12px 30px;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: background 0.3s ease;
-}
-
-.btn-devis:hover {
-  background-color: #162c66;
-}*/
 
 /* Responsive */
 @media (max-width: 768px) {
