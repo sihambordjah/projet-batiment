@@ -652,6 +652,9 @@ p {
   background-image: url(./images/prestations/pagecarrelage-banner.jpg);
 }
 /*-------page prestation plombrie-----------*/
+.banner_plombrie {
+  background-image: url(./images/prestations/pageplombrier-banner.jpg);
+}
 /*-------page prestation meubles cuisines-----------*/
 /*-------page prestation menuiserie-----------*/
 /*-------page prestation fenetres-----------*/
