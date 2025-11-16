@@ -664,6 +664,9 @@ p {
 /*-------page prestation meubles cuisines-----------*/
 /*-------page prestation menuiserie-----------*/
 /*-------page prestation fenetres-----------*/
+.banner-fenetres {
+  background-image: url(./images/prestations/pagefenetres-banner.jpg);
+}
 /*-------page prestation debarras-gravats-----------*/
 /*-------page prestation cave sous sol-----------*/
 /*-------page prestation platererie-----------*/
