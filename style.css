@@ -663,14 +663,23 @@ p {
 
 /*-------page prestation meubles cuisines-----------*/
 /*-------page prestation menuiserie-----------*/
+.banner-menuiserie {
+  background-image: url(./images/prestations/pagerevetement-sol-banner.jpg);
+}
 /*-------page prestation fenetres-----------*/
 .banner-fenetres {
   background-image: url(./images/prestations/pagefenetres-banner.jpg);
 }
 /*-------page prestation debarras-gravats-----------*/
 /*-------page prestation cave sous sol-----------*/
-/*-------page prestation platererie-----------*/
+/*-------page prestation enduit a la chaux-----------*/
+.banner-enduits {
+  background-image: url(./images/prestations/pageenduits-banner.jpg);
+}
 /*-------page prestation revetements de sol-----------*/
+.banner-revetement-sol {
+  background-image: url(./images/prestations/pagerevetement-sol-banner.jpg);
+}
 
 /* Responsive (mobile) */
 @media (max-width: 900px) {
