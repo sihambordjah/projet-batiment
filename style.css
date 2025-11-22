@@ -508,6 +508,20 @@ textarea.input {
   width: 50%;
   opacity: 1;
 }
+#status {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.success {
+  color: #fff; /* Vert (tu peux changer) */
+}
+
+.error {
+  color: #dc3545; /* Rouge */
+}
 /*----formulaire partie information*/
 .contact-info {
   padding: 2.3rem 2.2rem;
@@ -662,6 +676,9 @@ p {
 }
 
 /*-------page prestation meubles cuisines-----------*/
+.banner-cuisine {
+  background-image: url(./images/prestations/pagecuisine-banner.jpg);
+}
 /*-------page prestation menuiserie-----------*/
 .banner-menuiserie {
   background-image: url(./images/prestations/pagerevetement-sol-banner.jpg);
@@ -670,8 +687,18 @@ p {
 .banner-fenetres {
   background-image: url(./images/prestations/pagefenetres-banner.jpg);
 }
+/*-------page prestation cloison-----------*/
+.banner-cloison {
+  background-image: url(./images/prestations/pagecloison-banner.jpg);
+}
 /*-------page prestation debarras-gravats-----------*/
+.banner-gravats {
+  background-image: url(./images/prestations/pagegravats-banner.jpg);
+}
 /*-------page prestation cave sous sol-----------*/
+.banner-cave-sous-sol {
+  background-image: url(./images/prestations/pagecave-banner.jpg);
+}
 /*-------page prestation enduit a la chaux-----------*/
 .banner-enduits {
   background-image: url(./images/prestations/pageenduits-banner.jpg);
@@ -765,6 +792,45 @@ p {
     padding: 60px 5%;
   }
 }
+.realisation-section {
+  width: 100%;
+  padding: 100px;
+  margin-top: 100px;
+}
+.realisation-section h1 {
+  text-align: center;
+  margin: 40px 0 50px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 0 10%;
+  margin-bottom: 50px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive pour petits écrans */
+@media (max-width: 768px) {
+  .gallery {
+    padding: 0 5%;
+  }
+}
+
 /*----Footer----------*/
 
 footer {

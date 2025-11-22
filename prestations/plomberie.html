@@ -26,8 +26,7 @@
         <li><a href="../index.html">Accueil</a></li>
         <li><a href="../index.html#prestations">Nos Prestations</a></li>
         <li><a href="../nos-realisation.html">Nos Réalisations</a></li>
-        <li><a href="#">Contact/Devis</a></li>
-        <a href="#" class="btn-reserve">Demandez un devis</a>
+        <a href="#contact" class="btn-reserve">Contact/Devis</a>
       </ul>
     </header>
 
@@ -40,7 +39,7 @@
           et rapide, assuré par des plombiers qualifiés.
         </p>
         <a href="tel:+33769237070" class="btn">07 69 23 70 70</a>
-        <a href="#" class="btn">Demandez un devis</a>
+        <a href="#contact" class="btn">Contact/Devis</a>
       </div>
     </section>
 
@@ -72,7 +71,7 @@
               bouchées, problèmes de pression.
             </li>
             <li>
-              <strong>Réseaux d’eau :</strong> création ou modification des
+              <strong>Réseaux d'eau :</strong> création ou modification des
               arrivées et évacuations.
             </li>
             <li>
@@ -84,7 +83,7 @@
               mitigeurs et mélangeurs.
             </li>
           </ul>
-          <a href="../contact.html" class="btn">Demandez un devis gratuit</a>
+          <a href="#contact" class="btn">Contact/Devis</a>
         </div>
 
         <!-- Image à droite -->
@@ -154,13 +153,13 @@
 
         <div class="container-btn">
           <a href="tel:+33769237070" class="btn">07 69 23 70 70</a>
-          <a href="#" class="btn">Demandez un devis</a>
+          <a href="#contact" class="btn">Contact/Devis</a>
         </div>
       </div>
     </section>
 
     <!--section contact-->
-    <section class="contact">
+    <section class="contact" id="contact">
       <span class="big-circle"></span>
       <span class="big-circle-one"></span>
       <div class="form">
@@ -208,7 +207,11 @@
         <div class="contact-form">
           <span class="circle one"></span>
           <span class="circle two"></span>
-          <form action="index.html">
+          <form
+            id="my-form"
+            action="https://formspree.io/f/mqangvqy"
+            method="post"
+          >
             <h3 class="title">Contactez-nous</h3>
             <div class="input-container">
               <input type="text" name="name" class="input" />
@@ -232,6 +235,7 @@
             </div>
             <input type="submit" value="Envoyer" class="btn-submit" />
           </form>
+          <p id="status"></p>
         </div>
       </div>
     </section>
@@ -254,7 +258,7 @@
 
         <div class="footer-content">
           <h3>Contactez-nous</h3>
-          <p>Email: contact.prorenov75@gmail.com</p>
+          <p>Email: commerce.prorenov75@gmail.com</p>
           <p>Mobile: 07 69 23 70 70</p>
           <p>200 Rue Ettienne Marcel Bagnolet 93170</p>
         </div>

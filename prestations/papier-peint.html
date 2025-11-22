@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pose de Papier Peint & Revêtements Muraux | PRORENOV Bagnolet</title>
+    <title>Pose de Papier Peint & Revêtements Muraux | PRORENOV Paris</title>
     <meta
       name="description"
       content="PRORENOV installe votre papier peint, panoramiques, revêtements muraux, intissés, vinyles et décorations murales avec précision et finitions haut de gamme. Bagnolet et Île-de-France."
@@ -26,8 +26,7 @@
         <li><a href="../index.html">Accueil</a></li>
         <li><a href="../index.html#prestations">Nos Prestations</a></li>
         <li><a href="../nos-realisation.html">Nos Réalisations</a></li>
-        <li><a href="#">Contact/Devis</a></li>
-        <a href="#" class="btn-reserve">Demandez un devis</a>
+        <a href="#" class="btn-reserve">Contact/Devis</a>
       </ul>
     </header>
 
@@ -249,7 +248,11 @@
         <div class="contact-form">
           <span class="circle one"></span>
           <span class="circle two"></span>
-          <form action="index.html">
+          <form
+            id="my-form"
+            action="https://formspree.io/f/mqangvqy"
+            method="post"
+          >
             <h3 class="title">Contactez-nous</h3>
             <div class="input-container">
               <input type="text" name="name" class="input" />
@@ -273,6 +276,7 @@
             </div>
             <input type="submit" value="Envoyer" class="btn-submit" />
           </form>
+          <p id="status"></p>
         </div>
       </div>
     </section>

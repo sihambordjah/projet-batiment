@@ -48,3 +48,27 @@ inputs.forEach((input) => {
   input.addEventListener("focus", focusFunc);
   input.addEventListener("blur", blurFunc);
 });
+//Formulaire de contact reste sur la même page apres l'envoie du message
+const form = document.getElementById("my-form");
+const status = document.getElementById("status");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault(); // Empêche la redirection
+
+  const data = new FormData(form);
+
+  const response = await fetch(form.action, {
+    method: "POST",
+    body: data,
+    headers: { Accept: "application/json" },
+  });
+
+  if (response.ok) {
+    status.innerHTML = "✅ <span>Message envoyé avec succès !</span>";
+    status.className = "success";
+    form.reset();
+  } else {
+    status.innerHTML = "❌ <span>Erreur : réessayez plus tard.</span>";
+    status.className = "error";
+  }
+});
