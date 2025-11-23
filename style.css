@@ -86,23 +86,22 @@ header .navbar li a:hover {
   margin-left: 5px;
   border-radius: 4px;
 }
-/* Bouton hamburger 
-.hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 25px;
-  height: 18px;
-  cursor: pointer;
+/*-------header sticky-----*/
+header.sticky {
+  background: #fff;
+  padding: 10px 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
 }
-
-.hamburger span {
-  display: block;
-  height: 3px;
-  width: 100%;
-  background: #333;
-  border-radius: 2px;
-}*/
+header.sticky .logo {
+  color: #000;
+}
+header.sticky .navbar li a {
+  color: #000;
+}
+header.sticky li a:hover {
+  color: #317746;
+  border-bottom: 2px solid #317746;
+}
 /*-----section banniere--------*/
 .banniere {
   position: relative;
@@ -937,7 +936,60 @@ footer {
 
 /*-----media query---*/
 /*-----responsive tablette---*/
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 991px) {
+  /*header*/
+  header,
+  header.sticky {
+    padding: 10px 20px;
+  }
+  header .navbar li {
+    margin-left: 0px;
+  }
+  header .navbar li a {
+    text-decoration: none;
+    color: #111;
+    font-size: 1.6em;
+    font-weight: 300;
+  }
+  .navbar {
+    display: none;
+  }
+  .btn-reserve {
+    margin: 10px 0px;
+  }
+  section {
+    padding: 20px;
+  }
+  header .navbar.active {
+    width: 100%;
+    height: calc(100% -50px);
+    position: fixed;
+    top: 68px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+    align-items: center;
+  }
+  .menutoggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-image: url(images/icons/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  .menutoggle.active {
+    background-image: url(images/icons/close.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-origin: center;
+  }
+  header.sticky .menutoggle {
+    filter: invert(1);
+  }
   /* home */
   .home-section {
     flex-direction: column-reverse;
