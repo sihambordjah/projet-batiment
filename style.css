@@ -29,6 +29,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+h1,
+h2,
+h3,
+p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
 /*-----Header------*/
 header {
   position: fixed;
@@ -126,7 +133,8 @@ header.sticky li a:hover {
   text-transform: capitalize;
   font-family: "Dancing Script", Sans-serif;
   line-height: 1.4em;
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
 }
 .banniere .contenu p {
   color: #fff;
@@ -134,7 +142,8 @@ header.sticky li a:hover {
   text-transform: capitalize;
   font-family: "Dancing Script", Sans-serif;
   line-height: 1.4em;
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
 }
 .btn {
   font-size: 1em;
@@ -964,7 +973,7 @@ footer {
     width: 100%;
     height: calc(100% -50px);
     position: fixed;
-    top: 68px;
+    top: 120px;
     left: 0;
     display: flex;
     justify-content: center;
@@ -989,6 +998,20 @@ footer {
   }
   header.sticky .menutoggle {
     filter: invert(1);
+  }
+  /*banniere*/
+  .banniere .contenu h1 {
+    font-size: 1.8em;
+    max-width: 100%;
+  }
+
+  .banniere .contenu p {
+    font-size: 1.2em;
+    max-width: 100%;
+  }
+
+  .banniere .contenu {
+    max-width: 90%;
   }
   /* home */
   .home-section {
@@ -1018,6 +1041,27 @@ footer {
 }
 /*-----responsive moblile---*/
 @media screen and (max-width: 768px) {
+  .home-section .left {
+    width: 100%;
+    height: auto;
+  }
+
+  .home-section .left img {
+    position: static; /* enlève l'absolu qui casse tout sur mobile */
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .home-section .left-image-1,
+  .home-section .left-image-2 {
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+    transform: none !important; /* enlève les rotations */
+  }
+
   /* home */
   .home-section .left-image-1 {
     width: 350px;
