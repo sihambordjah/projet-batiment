@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pose de Revêtements de Sol | PRORENOV Bagnolet</title>
+    <title>Pose de Revêtements de Sol | PRORENOV Paris</title>
     <meta
       name="description"
       content="PRORENOV installe vos revêtements de sol : parquet, stratifié, PVC, lino, carrelage, sols techniques et rénovation complète. Pose soignée à Paris et Île-de-France."
@@ -26,8 +26,7 @@
         <li><a href="../index.html">Accueil</a></li>
         <li><a href="../index.html#prestations">Nos Prestations</a></li>
         <li><a href="#">Nos Réalisations</a></li>
-        <li><a href="#">Contact/Devis</a></li>
-        <a href="#" class="btn-reserve">Demandez un devis</a>
+        <a href="#contact" class="btn-reserve">Contact/Devis</a>
       </ul>
     </header>
 
@@ -40,11 +39,11 @@
           soignée pour un intérieur durable et harmonieux.
         </p>
         <a href="tel:+33769237070" class="btn">07 69 23 70 70</a>
-        <a href="#" class="btn">Demandez un devis</a>
+        <a href="#contact" class="btn">Contact/Devis</a>
       </div>
     </section>
 
-    <!-----section prestations electriques------>
+    <!-----section prestations revetements de sol------>
     <section class="service-section">
       <h2>Nos prestations de revêtements de sol</h2>
       <div class="service-container">
@@ -97,7 +96,7 @@
             finition de votre installation, avec la garantie d'un travail soigné
             et conforme.
           </p>
-          <a href="../contact.html" class="btn">Demandez un devis gratuit</a>
+          <a href="#contact" class="btn">Contact/Devis</a>
         </div>
 
         <!-- Image à droite -->
@@ -169,13 +168,12 @@
 
         <div class="container-btn">
           <a href="tel:+33769237070" class="btn">07 69 23 70 70</a>
-          <a href="#" class="btn">Demandez un devis</a>
         </div>
       </div>
     </section>
 
     <!--section contact-->
-    <section class="contact">
+    <section class="contact" id="contact">
       <span class="big-circle"></span>
       <span class="big-circle-one"></span>
       <div class="form">
@@ -223,7 +221,11 @@
         <div class="contact-form">
           <span class="circle one"></span>
           <span class="circle two"></span>
-          <form action="index.html">
+          <form
+            id="my-form"
+            action="https://formspree.io/f/mqangvqy"
+            method="post"
+          >
             <h3 class="title">Contactez-nous</h3>
             <div class="input-container">
               <input type="text" name="name" class="input" />
@@ -247,6 +249,7 @@
             </div>
             <input type="submit" value="Envoyer" class="btn-submit" />
           </form>
+          <p id="status"></p>
         </div>
       </div>
     </section>

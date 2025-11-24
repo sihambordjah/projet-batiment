@@ -26,8 +26,7 @@
         <li><a href="../index.html">Accueil</a></li>
         <li><a href="../index.html#prestations">Nos Prestations</a></li>
         <li><a href="../nos-realisation.html">Nos Réalisations</a></li>
-        <li><a href="#contact">Contact/Devis</a></li>
-        <a href="#contact" class="btn-reserve">Demandez un devis</a>
+        <a href="#contact" class="btn-reserve">Contact/Devis</a>
       </ul>
     </header>
 
@@ -222,7 +221,11 @@
         <div class="contact-form">
           <span class="circle one"></span>
           <span class="circle two"></span>
-          <form action="index.html">
+          <form
+            id="my-form"
+            action="https://formspree.io/f/mqangvqy"
+            method="post"
+          >
             <h3 class="title">Contactez-nous</h3>
             <div class="input-container">
               <input type="text" name="name" class="input" />
@@ -246,6 +249,7 @@
             </div>
             <input type="submit" value="Envoyer" class="btn-submit" />
           </form>
+          <p id="status"></p>
         </div>
       </div>
     </section>

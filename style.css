@@ -29,6 +29,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+h1,
+h2,
+h3,
+p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
 /*-----Header------*/
 header {
   position: fixed;
@@ -99,8 +106,8 @@ header.sticky .navbar li a {
   color: #000;
 }
 header.sticky li a:hover {
-  color: #eababa;
-  border-bottom: 2px solid #eababa;
+  color: #317746;
+  border-bottom: 2px solid #317746;
 }
 
 /*-----section banniere--------*/
@@ -119,23 +126,23 @@ header.sticky li a:hover {
 .banniere .contenu {
   max-width: 70%;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 120px;
 }
 .banniere .contenu h1 {
   color: #fff;
-  font-size: 3em;
+  font-size: 2.4em;
   text-transform: capitalize;
-  font-family: "Dancing Script", Sans-serif;
   line-height: 1.4em;
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
 }
 .banniere .contenu p {
   color: #fff;
-  font-size: 2em;
+  font-size: 1.8em;
   text-transform: capitalize;
-  font-family: "Dancing Script", Sans-serif;
   line-height: 1.4em;
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
 }
 .btn {
   font-size: 1em;
@@ -508,6 +515,20 @@ textarea.input {
   width: 50%;
   opacity: 1;
 }
+#status {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.success {
+  color: #fff; /* Vert (tu peux changer) */
+}
+
+.error {
+  color: #dc3545; /* Rouge */
+}
 /*----formulaire partie information*/
 .contact-info {
   padding: 2.3rem 2.2rem;
@@ -662,6 +683,9 @@ p {
 }
 
 /*-------page prestation meubles cuisines-----------*/
+.banner-cuisine {
+  background-image: url(./images/prestations/pagecuisine-banner.jpg);
+}
 /*-------page prestation menuiserie-----------*/
 .banner-menuiserie {
   background-image: url(./images/prestations/pagerevetement-sol-banner.jpg);
@@ -670,8 +694,18 @@ p {
 .banner-fenetres {
   background-image: url(./images/prestations/pagefenetres-banner.jpg);
 }
+/*-------page prestation cloison-----------*/
+.banner-cloison {
+  background-image: url(./images/prestations/pagecloison-banner.jpg);
+}
 /*-------page prestation debarras-gravats-----------*/
+.banner-gravats {
+  background-image: url(./images/prestations/pagegravats-banner.jpg);
+}
 /*-------page prestation cave sous sol-----------*/
+.banner-cave-sous-sol {
+  background-image: url(./images/prestations/pagecave-banner.jpg);
+}
 /*-------page prestation enduit a la chaux-----------*/
 .banner-enduits {
   background-image: url(./images/prestations/pageenduits-banner.jpg);
@@ -765,6 +799,45 @@ p {
     padding: 60px 5%;
   }
 }
+.realisation-section {
+  width: 100%;
+  padding: 100px;
+  margin-top: 100px;
+}
+.realisation-section h1 {
+  text-align: center;
+  margin: 40px 0 50px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 0 10%;
+  margin-bottom: 50px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive pour petits écrans */
+@media (max-width: 768px) {
+  .gallery {
+    padding: 0 5%;
+  }
+}
+
 /*----Footer----------*/
 
 footer {
@@ -872,6 +945,7 @@ footer {
 /*-----media query---*/
 /*-----responsive tablette---*/
 @media screen and (max-width: 991px) {
+  /*header*/
   header,
   header.sticky {
     padding: 10px 20px;
@@ -898,7 +972,10 @@ footer {
     width: 100%;
     height: calc(100% -50px);
     position: fixed;
+
     top: 68px;
+    top: 120px;
+
     left: 0;
     display: flex;
     justify-content: center;
@@ -910,19 +987,36 @@ footer {
     position: relative;
     width: 40px;
     height: 40px;
-    background-image: url(images/menu.png);
+
+    background-image: url(images/icons/menu.png);
+
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
   }
   .menutoggle.active {
-    background-image: url(images/close.png);
+    background-image: url(images/icons/close.png);
     background-size: 30px;
     background-repeat: no-repeat;
     background-origin: center;
   }
   header.sticky .menutoggle {
     filter: invert(1);
+  }
+
+  /*banniere*/
+  .banniere .contenu h1 {
+    font-size: 1.8em;
+    max-width: 100%;
+  }
+
+  .banniere .contenu p {
+    font-size: 1.2em;
+    max-width: 100%;
+  }
+
+  .banniere .contenu {
+    max-width: 90%;
   }
   /* home */
   .home-section {
@@ -951,7 +1045,64 @@ footer {
   }
 }
 /*-----responsive moblile---*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
+  /*------banniere-------*/
+  .banniere .contenu h1 {
+    font-size: 1.2em;
+    color: #fff;
+  }
+  /*------formulaire de contact-------*/
+  .contact {
+    padding: 1.5rem;
+  }
+  .contact-info::before {
+    display: none;
+  }
+  form,
+  .contact-info {
+    padding: 1.7rem 1.6rem;
+  }
+  .information,
+  .social-media i {
+    font-size: 0.8rem;
+  }
+  .title {
+    font-size: 1.15rem;
+  }
+  .social-icons a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+  .icon {
+    width: 23px;
+  }
+  .input {
+    padding: 0.45rem 1.2rem;
+  }
+  .btn {
+    padding: 0.45rem 1.2rem;
+  }
+  .home-section .left {
+    width: 100%;
+    height: auto;
+  }
+
+  .home-section .left img {
+    position: static; /* enlève l'absolu qui casse tout sur mobile */
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .home-section .left-image-1,
+  .home-section .left-image-2 {
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+    transform: none !important; /* enlève les rotations */
+  }
   /* home */
   .home-section .left-image-1 {
     width: 350px;

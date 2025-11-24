@@ -27,10 +27,19 @@
       /></a>
       <div class="menutoggle" onclick="toggleMenu();"></div>
       <ul class="navbar">
-        <li><a href="#banniere" onclick="toggleMenu();">Accueil</a></li>
-        <li><a href="#prestations" onclick="toggleMenu();">Nos Prestations</a></li>
-        <li><a href="./nos-realisation.html" onclick="toggleMenu();">Nos Réalisations</a></li>
-        <a href="#contact" class="btn-reserve" onclick="toggleMenu();">Demandez un devis</a>
+
+        <li><a href="./index.html" onclick="toggleMenu();">Accueil</a></li>
+        <li>
+          <a href="#prestations" onclick="toggleMenu();">Nos Prestations</a>
+        </li>
+        <li>
+          <a href="./nos-realisation.html" onclick="toggleMenu();"
+            >Nos Réalisations</a
+          >
+        </li>
+        <a href="#contact" class="btn-reserve" onclick="toggleMenu();"
+          >Contact/Devis</a
+        >
       </ul>
     </header>
     <!--section banniere-->
@@ -42,7 +51,7 @@
           électricité, peinture, carrelage.
         </p>
         <a href="tel:+33769237070" class="btn">07 69 23 70 70</a>
-        <a href="#" class="btn">Demandez un devis</a>
+        <a href="#contact" class="btn">Contact/Devis</a>
       </div>
     </section>
     <!--section home(a propos)-->
@@ -153,22 +162,6 @@
             >
           </div>
         </div>
-        <!--
-        <div class="card">
-          <img
-            src="images/box-img4.jpg"
-            alt="Travaux de plâtrerie et isolation réalisés par PRORENOV à Bagnolet"
-          />
-
-          <div class="card-content">
-            <h3>PLÂTRERIE ISOLATION</h3>
-            <p>
-              Installation de matériaux permettant la création de cloisons et
-              d'isoler thermiquement et phoniquement vos lieux de vie.
-            </p>
-            <a href="" class="btn">En savoir plus</a>
-          </div>
-        </div>-->
 
         <div class="card">
           <img src="images/box-img5.jpg" alt="Application peinture murale" />
@@ -206,6 +199,7 @@
             <a href="./prestations/fenetres.html" class="btn">En savoir plus</a>
           </div>
         </div>
+
         <div class="card">
           <img
             src="images/box-img8.jpg"
@@ -269,9 +263,10 @@
               PRO RENOV met à votre service son savoir-faire pour la pose de
               meubles et l'installation complète de cuisines sur mesure.
             </p>
-            <a href="" class="btn">En savoir plus</a>
+            <a href="./prestations/cuisine.html" class="btn">En savoir plus</a>
           </div>
         </div>
+
         <div class="card">
           <img
             src="images/box-img12.jpg"
@@ -284,9 +279,10 @@
               de sol, que ce soit dans le cadre d'une rénovation complète, d'un
               rafraîchissement intérieur, ou d'un aménagement neuf.
             </p>
-            <a href="" class="btn">En savoir plus</a>
+            <a href="./prestations/cloisons.html" class="btn">En savoir plus</a>
           </div>
         </div>
+
         <div class="card">
           <img
             src="images/box-img13.jpg"
@@ -299,7 +295,9 @@
               d'enlèvement de gravats et de mise en déchetterie pour laisser vos
               espaces propres et prêts à être utilisés.
             </p>
-            <a href="" class="btn">En savoir plus</a>
+            <a href="./prestations/debarras-gravats.html" class="btn"
+              >En savoir plus</a
+            >
           </div>
         </div>
 
@@ -317,7 +315,9 @@
               pour vous permettre de retrouver un espace propre et fonctionnel
               sans contrainte.
             </p>
-            <a href="" class="btn">En savoir plus</a>
+            <a href="./prestations/cave-sous-sol.html" class="btn"
+              >En savoir plus</a
+            >
           </div>
         </div>
       </div>
@@ -413,7 +413,11 @@
         <div class="contact-form">
           <span class="circle one"></span>
           <span class="circle two"></span>
-          <form action="index.html">
+          <form
+            id="my-form"
+            action="https://formspree.io/f/mqangvqy"
+            method="post"
+          >
             <h3 class="title">Contactez-nous</h3>
             <div class="input-container">
               <input type="text" name="name" class="input" />
@@ -437,6 +441,7 @@
             </div>
             <input type="submit" value="Envoyer" class="btn-submit" />
           </form>
+          <p id="status"></p>
         </div>
       </div>
     </section>
