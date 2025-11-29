@@ -1,0 +1,44 @@
+# ==============================
+# En-têtes de sécurité pour tout le site
+# Appliqués à toutes les pages grâce à /* 
+# ==============================
+
+/*
+  # Force l'utilisation du HTTPS pour tout le site
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+
+  # Empêche que le site soit affiché dans un iframe d'un autre site (protection clickjacking)
+  X-Frame-Options: SAMEORIGIN
+
+  # Empêche le navigateur de deviner le type des fichiers
+  X-Content-Type-Options: nosniff
+
+  # Politique de confidentialité sur les informations envoyées lors des liens sortants
+  Referrer-Policy: no-referrer-when-downgrade
+
+  # Bloque l'accès caméra, micro, géolocalisation et fullscreen par défaut
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), fullscreen=()
+
+  # Protége contre les attaques inter-onglets
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Embedder-Policy: require-corp
+  Cross-Origin-Resource-Policy: same-origin
+
+  # Protection XSS pour les anciens navigateurs
+  X-XSS-Protection: 1; mode=block
+
+  # ==============================
+  # Content Security Policy (CSP) SEO-friendly
+  # Permet Google Fonts et Google Analytics
+  # Bloque tout le reste
+  # ==============================
+  Content-Security-Policy: 
+    default-src 'self';                       # Autorise seulement le domaine du site par défaut
+    script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com; # Scripts locaux + GA
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;   # Styles locaux + Google Fonts
+    img-src 'self' data:;                     # Images locales et data URI
+    font-src 'self' https://fonts.gstatic.com; # Fonts locales + Google Fonts
+    connect-src 'self' https://www.google-analytics.com; # Autorise fetch vers GA
+    frame-ancestors 'none';                   # Interdit iframe sur ton site
+    base-uri 'self';                          # Limite la balise <base> à ton domaine
+    form-action 'self';                       # Limite l’envoi de formulaires à ton domaine
