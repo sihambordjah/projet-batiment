@@ -995,6 +995,7 @@ footer {
     background-size: 30px;
     background-repeat: no-repeat;
     background-origin: center;
+    z-index: -1;
   }
   header.sticky .menutoggle {
     filter: invert(1);
