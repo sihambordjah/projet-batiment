@@ -73,6 +73,7 @@ form.addEventListener("submit", async (e) => {
   }
 });
 
+
 //menu hamburger responsive mobile
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
