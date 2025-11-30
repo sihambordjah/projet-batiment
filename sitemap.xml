@@ -8,15 +8,87 @@
   </url>
 
   <url>
-    <loc>https://prorenove-renovation.com/contact</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+  <loc>https://prorenove-renovation.com/prestations/electricite</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+ <url>
+  <loc>https://prorenove-renovation.com/prestations/carrelage</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+ <url>
+  <loc>https://prorenove-renovation.com/prestations/plomberie</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+ <url>
+  <loc>https://prorenove-renovation.com/prestations/peinture</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+ <url>
+  <loc>https://prorenove-renovation.com/prestations/papier-peint</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+ <url>
+  <loc>https://prorenove-renovation.com/prestations/fenetres</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://prorenove-renovation.com/prestations/menuiserie</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://prorenove-renovation.com/prestations/revetements-de-sol</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://prorenove-renovation.com/prestations/enduit-a-la-chaux</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://prorenove-renovation.com/prestations/cuisine</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://prorenove-renovation.com/prestations/cloisons</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://prorenove-renovation.com/prestations/debarras-gravats</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://prorenove-renovation.com/prestations/cave-sous-sol</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
 
   <url>
-    <loc>https://prorenove-renovation.com/services</loc>
+    <loc>https://prorenove-renovation.com/nos-realisation</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
 </urlset>
