@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -18,25 +18,43 @@
       src="https://kit.fontawesome.com/56f636a24d.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TNP4PBZ4");
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNP4PBZ4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <!--section header-->
     <header>
       <a href="index.html" class="logo"
         ><img src="images/logo-prerenov.png" alt="image logo" class="logo"
       /></a>
-      <div class="menutoggle" onclick="toggleMenu();"></div>
+      <div class="menutoggle" onclick="toggleMenu()"></div>
       <ul class="navbar">
-        <li><a href="./index.html" onclick="toggleMenu();">Accueil</a></li>
+        <li><a href="./index.html" onclick="toggleMenu()">Accueil</a></li>
         <li>
-          <a href="#prestations" onclick="toggleMenu();">Nos Prestations</a>
+          <a href="#prestations" onclick="toggleMenu()">Nos Prestations</a>
         </li>
         <li>
-          <a href="./nos-realisation.html" onclick="toggleMenu();"
+          <a href="./nos-realisation.html" onclick="toggleMenu()"
             >Nos Réalisations</a
           >
         </li>
-        <a href="#contact" class="btn-reserve" onclick="toggleMenu();"
+        <a href="#contact" class="btn-reserve" onclick="toggleMenu()"
           >Contact/Devis</a
         >
       </ul>
