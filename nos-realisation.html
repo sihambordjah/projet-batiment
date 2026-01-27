@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -16,6 +16,22 @@
       src="https://kit.fontawesome.com/56f636a24d.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Google Tag Manager-->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TCP72MHL0W"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-TCP72MHL0W");
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
   <body>
     <!--section header-->
@@ -23,20 +39,20 @@
       <a href="index.html" class="logo"
         ><img src="images/logo-prerenov.png" alt="image logo" class="logo"
       /></a>
-      <div class="menutoggle" onclick="toggleMenu();"></div>
+      <div class="menutoggle" onclick="toggleMenu()"></div>
       <ul class="navbar">
-        <li><a href="./index.html" onclick="toggleMenu();">Accueil</a></li>
+        <li><a href="./index.html" onclick="toggleMenu()">Accueil</a></li>
         <li>
-          <a href="../index.html#prestations" onclick="toggleMenu();"
+          <a href="../index.html#prestations" onclick="toggleMenu()"
             >Nos Prestations</a
           >
         </li>
         <li>
-          <a href="../nos-realisation.html" onclick="toggleMenu();"
+          <a href="../nos-realisation.html" onclick="toggleMenu()"
             >Nos Réalisations</a
           >
         </li>
-        <a href="#contact" class="btn-reserve" onclick="toggleMenu();"
+        <a href="#contact" class="btn-reserve" onclick="toggleMenu()"
           >Contact/Devis</a
         >
       </ul>
