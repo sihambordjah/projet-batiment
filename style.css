@@ -526,7 +526,7 @@ textarea.input {
 }
 
 .error {
-  color: #dc3545; /* Rouge */
+  color: #dc3545;
 }
 /*----formulaire partie information*/
 .contact-info {
@@ -675,12 +675,10 @@ p {
 .banner-plombrie {
   background-image: url(./images/prestations/pageplombrie-banner.jpg);
 }
-
 /*-------page prestation papier peint-----------*/
 .banner-papierpeint {
   background-image: url(./images/prestations/pagepapier-peint-banner.jpg);
 }
-
 /*-------page prestation meubles cuisines-----------*/
 .banner-cuisine {
   background-image: url(./images/prestations/pagecuisine-banner.jpg);
@@ -732,18 +730,15 @@ p {
   margin-bottom: 10px;
   font-weight: 800;
 }
-
 .pourquoi-nous h2 span {
   color: #3b82f6; /* bleu plus clair pour contraste */
 }
-
 .subtitle {
   font-size: 1.2rem;
   color: #64748b;
   margin-bottom: 80px;
   font-style: italic;
 }
-
 .reasons {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -788,7 +783,6 @@ p {
   text-align: center;
   margin: 40px 0 50px;
 }
-
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -796,7 +790,6 @@ p {
   padding: 0 10%;
   margin-bottom: 50px;
 }
-
 .gallery img {
   width: 100%;
   height: auto;
@@ -805,14 +798,12 @@ p {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .gallery img:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /*----Footer----------*/
-
 footer {
   background: #000;
   padding-top: 50px;
