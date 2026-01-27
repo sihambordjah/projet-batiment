@@ -73,7 +73,6 @@ form.addEventListener("submit", async (e) => {
   }
 });
 
-
 //menu hamburger responsive mobile
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
@@ -86,3 +85,15 @@ function toggleMenu() {
   menutoggle.classList.toggle("active");
   navbar.classList.toggle("active");
 }
+
+//script Google tag (gtag.js)
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".btn-contact").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      gtag("event", "click_contact_devis", {
+        event_category: "engagement",
+        event_label: "contact_devis_button",
+      });
+    });
+  });
+});
