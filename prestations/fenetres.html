@@ -51,9 +51,16 @@
             >Nos Réalisations</a
           >
         </li>
-        <a href="#contact" class="btn-reserve" onclick="toggleMenu();"
-          >Contact/Devis</a
+        <a
+          href="#contact"
+          class="btn-reserve"
+          onclick="toggleMenu(); gtag('event', 'click_contact_devis', {
+     'event_category': 'engagement',
+     'event_label': 'menu'
+   });"
         >
+          Contact/Devis
+        </a>
       </ul>
     </header>
 

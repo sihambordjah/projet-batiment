@@ -51,9 +51,16 @@
             >Nos Réalisations</a
           >
         </li>
-        <a href="#contact" class="btn-reserve" onclick="toggleMenu()"
-          >Contact/Devis</a
+        <a
+          href="#contact"
+          class="btn-reserve"
+          onclick="toggleMenu(); gtag('event', 'click_contact_devis', {
+     'event_category': 'engagement',
+     'event_label': 'menu'
+   });"
         >
+          Contact/Devis
+        </a>
       </ul>
     </header>
     <!--section banniere-->
@@ -65,7 +72,16 @@
           électricité, peinture, carrelage.
         </p>
         <a href="tel:+33769237070" class="btn">07 69 23 70 70</a>
-        <a href="#contact" class="btn">Contact/Devis</a>
+        <a
+          href="#contact"
+          class="btn"
+          onclick="gtag('event', 'click_contact_devis', {
+     'event_category': 'engagement',
+     'event_label': 'banniere'
+   });"
+        >
+          Contact/Devis
+        </a>
       </div>
     </section>
     <!--section home(a propos)-->
